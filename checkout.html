@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="buildpage.js"></script>
+    <script src="checkout.js"></script>
+</head>
+<body onload="buildcheckout()" id="body">
+<div class="overtopbox">
+    <div class="topbox">
+        <div class = "homebutton" onclick="location.href='index.html'">
+            <h1 class="pagetitle">Reed College Backpack Co-Op</h1>
+        </div>            <div class="categoriesbutton" onclick="location.href='categories.html'">
+                <text>Categories</text>
+            </div>
+
+        <div class="checkoutdiv">
+            <h3 class="checkoutitems" id="checkoutcount">0 Items in Cart</h3>
+            <button class="checkoutbutton" onclick="location.href='checkout.html'">Check Out</button>
+        </div>
+    </div>
+</div>
+<div class="checkoutcontainer" id="checkoutcontainer">
+    <h1 class="checkouttitle" id="checkouttitle">Check Out</h1>
+    <h4 class="checkouttitle4" id = "checkouttitle4">Items</h4>
+    <div class="listcontainter" id="listcontainer">
+        <ul id="itemslist" style="display: inline-block; text-align: left">
+
+        </ul>
+        <br/>
+        <input type="text" id="name" placeholder="Name" class="checkoutfield"></input>
+        <br/>
+        <input type="email" id="email" placeholder="Email" class="checkoutfield"></input>
+        <br/>
+        <input type="text" id="comments" placeholder="Comments" class="checkoutfield"></input>
+        <br/>
+        <button class="checkoutbutton" onclick="docheckout()">Check Out</button>
+        <button class="cancelbutton" onclick="cancelorder()">Cancel Order</button>
+    </div>
+</div>
+
+
+
+</body>
+</html>

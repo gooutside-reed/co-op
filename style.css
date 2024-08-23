@@ -1,0 +1,596 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.woff');
+}
+
+@font-face {
+    font-family: 'SuperDessert';
+    src: url('Super Dessert.woff');
+}
+@font-face {
+    font-family: 'PoetsenOne';
+    src: url('PoetsenOne-Regular.woff');
+}
+
+.pagetitle{
+    font-family: 'PoetsenOne';
+    color: white;
+    font-size: 2.5vw;
+    left:10px;
+    vertical-align: text-top;
+}
+.homebutton{
+    background-color: #306573;
+    border-radius: 1vw;
+    height: 85%;
+    width: 40%;
+}
+.homebutton:hover{
+    background-color: #1c3a42;
+}
+
+.categoriesbutton{
+    font-family: 'PoetsenOne';
+    color: white;
+    font-size: 2.5vw;
+    left:10px;
+    background-color: #306573;
+    border-radius: 1vw;
+    margin:1.25vw;
+    padding: 1vw;
+    vertical-align: middle;
+}
+
+.categoriesbutton:hover{
+    background-color: #1c3a42;
+}
+
+.categoriesbox{
+    position:sticky;
+    width:100%;
+    left:0;
+    right:0;
+    top:0;
+    background-color: #468393;
+    overflow:hidden;
+    box-sizing:border-box;
+    display:flex;
+    justify-content: space-between;
+    line-height: 2vw;
+    text-align:center;
+    padding:1vw;
+    height:2vw;
+
+}
+
+.categoriesitem{
+
+}
+
+
+.checkoutitems{
+    font-family: 'PoetsenOne';
+    color:white;
+    font-size: 2vw;
+    padding:0vw;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.checkoutdiv{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+    top:0;
+    bottom:0;
+    line-height: 2vw;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.checkoutbutton{
+    font-family: 'PoetsenOne';
+    background-color: #4ea7bb;
+    border: none;
+    color: white;
+    padding: .5vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vw;
+    border-radius:1.5vw;
+    margin-left:1.5vw;
+    height: 75%;
+    vertical-align: center;
+}
+
+.checkoutbutton:hover{
+    background-color: #244e57;
+}
+
+html,body{
+    background-color: #afbbac;
+    margin:0;
+    padding:0;
+}
+.overtopbox{
+    position:sticky;
+    background-color: red;
+    top: 0px;
+    z-index: 999;
+}
+
+.topbox{
+    position:relative;
+    width:100%;
+    height:8vw;
+    left:0;
+    right:0;
+    top:0;
+    background-color: #306573;
+    overflow:hidden;
+    padding-left:25px;
+    padding-right:25px;
+    box-sizing:border-box;
+    display:flex;
+    justify-content: space-between;
+    line-height: 2vw;
+    text-align:center;
+    padding-top:1vw;
+}
+.grid-container {
+
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 25px;
+    column-gap: 25px;
+    row-gap: 25px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width:700px) {
+    .grid-container {
+
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 25px;
+        column-gap: 25px;
+        row-gap: 25px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-top: 10px;
+
+    }
+}
+.grid-item{
+    background-color: rgb(241, 241, 236);
+    border: 15px solid rgb(241, 241, 236);
+    text-align: center;
+    border-spacing:0px;
+    position:relative;
+    border-radius:  25px;
+    overflow:auto;
+    display:table;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridimage{
+    max-width:100%;
+    max-height:100%;
+    border-radius:2.5vw;
+    object-fit: contain;
+    display: table-row;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.grid-item:hover{
+    background-color: rgb(241, 241, 236);
+    border: 15px solid rgb(96, 134, 85);
+    text-align: center;
+    border-spacing:0px;
+    position:relative;
+    border-radius:  25px;
+    overflow:auto;
+    display:table;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.divtextbox{
+    box-sizing: border-box;
+    width:100%;
+    bottom:0px;
+    background-color: #f1f1ec;
+    padding:50px;
+    display: table-row;
+    border-top: 5px solid rgba(0, 0, 0, 0.8);
+
+
+}
+.divtextboxtitle{
+    font-family: 'PoetsenOne';
+    font-size:3vw;
+    color: #000000;
+    text-align:center;
+    line-height: 3vw;
+}
+.divtextboxquantity{
+    font-family: 'PoetsenOne';
+    font-size:1.5vw;
+    color: #000000;
+    text-align:center;
+}
+
+.descriptionbox{
+    padding:1vw;
+    background-color: #e0eadd;
+    margin-bottom: .5vw;
+    border-radius: .5vw;
+    outline: .25vw solid #757e73;
+
+}
+
+.itemdescription{
+    font-family: 'PoetsenOne';
+    font-size:1.5vw;
+    color: #000000;
+    text-align:center;
+    line-height: 10px;
+}
+
+.cartbutton{
+    font-family: 'PoetsenOne';
+    background-color: #467dc9;
+    border: none;
+    color: white;
+    padding: 1vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius:1.5vw;
+    line-height:1.5vw;
+    margin-bottom:1.0vw;
+}
+
+.cartbutton:hover{
+    background-color: #294873;
+}
+
+.checkoutcontainer{
+    background-color: #F1F1ECFF;
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+    margin-top: 2.5vw;
+    vertical-align: center;
+    padding:.25vw;
+    border-radius: 2vw;
+    text-align: center;
+    align-content: center;
+}
+
+.checkouttitle{
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 3vw;
+    left:10px;
+    text-align: center;
+    margin:2vw;
+    margin-bottom: 4vw;
+}
+.checkouttitle4{
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 2vw;
+    left:10px;
+    text-align: center;
+    padding:0;
+    line-height: 0;
+    margin:1vw;
+
+}
+
+.responsetext{
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 3vw;
+    left:10px;
+    text-align: center;
+    margin:2vw;
+    margin-bottom: 4vw;
+}
+.responsedisclaimer{
+    font-family: 'PoetsenOne';
+    color: red;
+    font-size: 3vw;
+    left:10px;
+    text-align: center;
+    margin:2vw;
+    margin-bottom: 4vw;
+}
+
+
+
+
+.checkoutlistelement{
+    margin:0;
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 2vw;
+}
+.checkoutlistelementnone{
+    margin:0;
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 2vw;
+}
+.checkoutlistelement:hover{
+    text-decoration: line-through;
+    color: #c20b0b;
+
+}
+.listcontainter{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.checkoutfield{
+    font-family: 'PoetsenOne';
+    font-size:1.5vw;
+    border:none;
+    padding:.25vw;
+    margin:.5vw;
+    width:15vw;
+    height:2vw;
+    border-radius: .5vw;
+}
+
+.checkoutbutton{
+    font-family: 'PoetsenOne';
+    background-color: #4ca838;
+    border: none;
+    color: white;
+    padding: 1vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius:1vw;
+    line-height:1.5vw;
+    margin:0.5vw;
+    margin-bottom:1.0vw;
+    position:relative;
+}
+.checkoutbutton:hover{
+    background-color: #28571d;
+}
+.cancelbutton{
+    font-family: 'PoetsenOne';
+    background-color: #d25252;
+    border: none;
+    color: white;
+    padding: 1vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius:1vw;
+    line-height:1.5vw;
+    margin:0.5vw;
+    margin-bottom:1.0vw;
+    position:relative;
+}
+.cancelbutton:hover{
+    background-color: #521e1e;
+}
+
+
+
+
+
+
+
+
+
+
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 10vw;
+    align-content: center;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    top:100%;
+    left:45%;
+    width: 10vw;
+    height: 10vw;
+    margin: 2vw;
+    border: 1.5vw solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.mainbox{
+    background-color: #F1F1ECFF;
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+    margin-top: 2.5vw;
+    vertical-align: center;
+    padding:.25vw;
+    border-radius: 2vw;
+    text-align: center;
+    align-content: center;
+}
+
+.homepagetitle{
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 3vw;
+    left:10px;
+    text-align: center;
+    margin:1vw;
+}
+
+
+.utilityinput{
+    width:45%;
+    height:3vw;
+    border-radius: 1vw;
+    font-family: 'PoetsenOne';
+    font-size:3vw;
+    padding: 1vw;
+    border:none;
+    margin:2vw;
+
+}
+
+.utilitybutton{
+    font-family: 'PoetsenOne';
+    background-color: #4ea7bb;
+    border: none;
+    color: white;
+    padding: .5vw 1vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vw;
+    border-radius:1.5vw;
+    margin-left:0vw;
+    height: 4vw;
+    vertical-align: center;
+}
+
+.utilitybutton:hover{
+    background-color: #244e57;
+}
+
+.resultsbox{
+    width:75%;
+    padding:1vw;
+    background-color: #757e73;
+    horiz-align: center;
+    vertical-align: center;
+    border-radius: 2vw;
+    text-align: center;
+    align-content: center;
+    margin:auto;
+    margin-bottom: 1vw;
+}
+.resultsboxsmall{
+    width:75%;
+    padding:1vw;
+    background-color: #beccba;
+    horiz-align: center;
+    vertical-align: center;
+    border-radius: 2vw;
+    text-align: center;
+    align-content: center;
+    margin:auto;
+    margin-bottom: 1vw;
+    margin-top:0vw;
+}
+
+.utilityresponsetext{
+    font-family: 'PoetsenOne';
+    color:white;
+    font-size: 3vw;
+    margin-bottom:.25vw;
+}
