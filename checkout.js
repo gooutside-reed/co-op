@@ -1,7 +1,7 @@
 var checkedout = false;
 function docheckout(){
     var ck = document.cookie;
-    var url= "https://script.google.com/macros/s/AKfycbxbjScQ8cj9umjGc10XTEZKqR_jUBO4Xz-caAO9GsS0jiMxqmkNtCULFw7Mn3-svO8dYQ/exec?requesttype=checkout";
+    var url= "https://script.google.com/macros/s/AKfycbz3LWtcS6LT1xuq6_xawepVwO46aOmxgvTr4bsf8Ts1yuP_mdf0v6bvdtVrGCVy70JEXA/exec?requesttype=checkout";
     if(document.getElementById("name").value !=""){
         url+="&name="+document.getElementById("name").value;
     }else{
@@ -17,6 +17,12 @@ function docheckout(){
 
     url+="&comments="+document.getElementById("comments").value;
 
+    if(document.getElementById("signature").value !=""){
+        url+="&signature="+document.getElementById("signature").value;
+    }else{
+        alert("No Signature Provided!");
+        return
+    }
 
     if(ck!=""){
         var ckjson= JSON.parse(ck);

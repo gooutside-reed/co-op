@@ -5,7 +5,7 @@ function request() {
     const urlParams = new URLSearchParams(queryString);
     const category = urlParams.get('category');
     console.log(category);
-    Http.open("GET", "https://script.google.com/macros/s/AKfycbxbjScQ8cj9umjGc10XTEZKqR_jUBO4Xz-caAO9GsS0jiMxqmkNtCULFw7Mn3-svO8dYQ/exec?requesttype=itemsrequest&category="+category);
+    Http.open("GET", "https://script.google.com/macros/s/AKfycbz3LWtcS6LT1xuq6_xawepVwO46aOmxgvTr4bsf8Ts1yuP_mdf0v6bvdtVrGCVy70JEXA/exec?requesttype=itemsrequest&category="+category);
     Http.send();
     var responsejson;
     Http.onreadystatechange = (e) => {

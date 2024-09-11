@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="buildpage.js"></script>
-    <script src="checkout.js"></script>
+    <link rel="stylesheet" href="WebstormProjects/co-op/style.css">
+    <script src="WebstormProjects/co-op/buildpage.js"></script>
+    <script src="WebstormProjects/co-op/checkout.js"></script>
 </head>
 <body onload="buildcheckout()" id="body">
 <div class="overtopbox">
@@ -35,6 +35,10 @@
         <input type="email" id="email" placeholder="Email" class="checkoutfield"></input>
         <br/>
         <input type="text" id="comments" placeholder="Comments" class="checkoutfield"></input>
+        <br/>
+        <h4 class="legalreq">PLEASE SIGN NAME BELOW: I understand that the sports and activities such as, but not limited to, rafting, kayaking, canoeing, camping, backpacking, rock climbing, mountaineering, ice climbing, snowshoeing, skiing and other sports (collectively RECREATIONAL OUTDOOR SPORTS) involve inherent and other risks of INJURY AND DEATH. I voluntarily agree to expressly assume all risks of injury or death that may result from participation in these RECREATIONAL OUTDOOR SPORTS, or which relate in any way to the use and transportation of this equipment.In consideration of the equipment furnished to me, I hereby release Reed College, the Backpack Co-Op and any personnel of either from all liability for injury and/or accident that may occur while this equipment is rented to me. I assume all risks. I understand that I am to examine the equipment for fault and malfunction before its use.Further, I understand I am solely responsible for the proper care and handling of the equipment rented to me and for the conduct of those persons using the equipment while rented to me. I assume all responsibility for damage, loss or theft of rental equipment incurred during the rental period and /or while transporting, loading, unloading, or through negligent use. I agree to pay for all repairs or replacement of the equipment damaged or lost under such conditions. I also agree that if such damage or late fines are not paid, the renter will be bill and collected by the Reed College Business Office. I, THE UNDERSIGNED, HAVE READ AND UNDERSTAND THIS EQUIPMENT RENTAL AND LIABILITY RELEASE AGREEMENT.</h4>
+        <br/>
+        <input type="text" id="signature" placeholder="Your Signature Here" class="checkoutfield"></input>
         <br/>
         <button class="checkoutbutton" onclick="docheckout()">Check Out</button>
         <button class="cancelbutton" onclick="cancelorder()">Cancel Order</button>

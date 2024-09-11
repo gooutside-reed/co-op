@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'BebasNeue';
-    src: url('BebasNeue-Regular.woff');
+    src: url('WebstormProjects/co-op/BebasNeue-Regular.woff');
 }
 
 @font-face {
     font-family: 'SuperDessert';
-    src: url('Super Dessert.woff');
+    src: url('WebstormProjects/co-op/Super Dessert.woff');
 }
 @font-face {
     font-family: 'PoetsenOne';
-    src: url('PoetsenOne-Regular.woff');
+    src: url('WebstormProjects/co-op/PoetsenOne-Regular.woff');
 }
 
 .pagetitle{
@@ -360,6 +360,22 @@ html,body{
     height:2vw;
     border-radius: .5vw;
 }
+.legalreq{
+    font-family: 'PoetsenOne';
+    font-size:1.5vw;
+    border:none;
+    padding:.5vw;
+    margin:.5vw;
+    width:60vw;
+    height:2vw;
+    border-radius: .5vw;
+    display: inline-block;
+    position: relative;
+    align-content: center;
+    color: #c20b0b;
+
+}
+
 
 .checkoutbutton{
     font-family: 'PoetsenOne';
@@ -525,6 +541,24 @@ html,body{
     font-family: 'PoetsenOne';
     color: black;
     font-size: 3vw;
+    left:10px;
+    text-align: center;
+    margin:1vw;
+}
+
+.homepage_message{
+    font-family: 'PoetsenOne';
+    color: red;
+    font-size: 2vw;
+    left:10px;
+    text-align: center;
+    margin:1vw;
+}
+
+.current_hours{
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 2vw;
     left:10px;
     text-align: center;
     margin:1vw;
