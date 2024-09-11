@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'BebasNeue';
-    src: url('WebstormProjects/co-op/BebasNeue-Regular.woff');
+    src: url('/BebasNeue-Regular.woff');
 }
 
 @font-face {
     font-family: 'SuperDessert';
-    src: url('WebstormProjects/co-op/Super Dessert.woff');
+    src: url('Super Dessert.woff');
 }
 @font-face {
     font-family: 'PoetsenOne';
-    src: url('WebstormProjects/co-op/PoetsenOne-Regular.woff');
+    src: url('PoetsenOne-Regular.woff');
 }
 
 .pagetitle{
