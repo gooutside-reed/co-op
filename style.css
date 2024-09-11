@@ -558,10 +558,22 @@ html,body{
 .current_hours{
     font-family: 'PoetsenOne';
     color: black;
-    font-size: 2vw;
+    font-size: 2.5vw;
     left:10px;
     text-align: center;
     margin:1vw;
+}
+.hoursbox{
+    font-family: 'PoetsenOne';
+    color: black;
+    font-size: 2vw;
+    text-align: left;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width: 15em;
+    padding: .5em;
+
 }
 
 
