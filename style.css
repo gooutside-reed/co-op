@@ -108,6 +108,8 @@
     background-color: #244e57;
 }
 
+
+
 html,body{
     background-color: #afbbac;
     margin:0;
@@ -376,6 +378,23 @@ html,body{
 
 }
 
+.terms-list{
+    padding: 0vw;
+    display: inline-block;
+    margin:0vw;
+    text-align: left;
+    max-width: 50vw;
+}
+
+.terms-items{
+
+    padding-top:.5vw;
+    font-family: 'PoetsenOne';
+    font-size:1.5vw;
+    color: #C20B0BFF;
+
+}
+
 
 .checkoutbutton{
     font-family: 'PoetsenOne';
@@ -544,6 +563,17 @@ html,body{
     left:10px;
     text-align: center;
     margin:1vw;
+}
+
+.welcometext{
+    font-family: 'PoetsenOne';
+    display: inline-block;
+    color: black;
+    font-size: 2vw;
+    left:10px;
+    text-align: center;
+    margin:1vw;
+    max-width: 50vw;
 }
 
 .homepage_message{
