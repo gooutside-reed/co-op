@@ -4,12 +4,13 @@ function request() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const category = urlParams.get('category');
-    Http.open("GET", "https://script.google.com/macros/s/AKfycbxR26Lh0LuEjJ6D4_-eoabwb3BRg9-6lUXDBu3oM13q9k5dx996g8y0Jo_GuSHCNY78AQ/exec?requesttype=categoryrequest");
+    Http.open("GET", "https://script.google.com/macros/s/AKfycbwQsyEf8aUFR19oiQM75mJzPxn_YmBm08AkueqzmMIdZZ_u3QjSqK9tvWgSg14ejRaadg/exec?requesttype=categoryrequest");
     Http.send();
     var responsejson;
     Http.onreadystatechange = (e) => {
         var response=Http.responseText;
         responsejson=JSON.parse(response);
+        console.log(responsejson);
         if(pagebuilt==false) {
             buildpage(responsejson);
             console.log(responsejson);

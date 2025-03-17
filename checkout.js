@@ -1,7 +1,7 @@
 var checkedout = false;
 function docheckout(){
     var ck = document.cookie;
-    var url= "https://script.google.com/macros/s/AKfycbxR26Lh0LuEjJ6D4_-eoabwb3BRg9-6lUXDBu3oM13q9k5dx996g8y0Jo_GuSHCNY78AQ/exec?requesttype=checkout";
+    var url= "https://script.google.com/macros/s/AKfycbwQsyEf8aUFR19oiQM75mJzPxn_YmBm08AkueqzmMIdZZ_u3QjSqK9tvWgSg14ejRaadg/exec?requesttype=checkout";
     if(document.getElementById("name").value !=""){
         url+="&name="+document.getElementById("name").value;
     }else{
@@ -31,6 +31,20 @@ function docheckout(){
         url+="&signature="+document.getElementById("signature").value;
     }else{
         alert("No Signature Provided!");
+        return
+    }
+
+    if(document.getElementById("role").value !=""){
+        url+="&role="+document.getElementById("role").value;
+    }else{
+        alert("No Role Provided!");
+        return
+    }
+
+    if(document.getElementById("reedid").value !=""){
+        url+="&reedid="+document.getElementById("reedid").value;
+    }else{
+        alert("No ID Provided!");
         return
     }
 
