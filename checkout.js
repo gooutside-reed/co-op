@@ -1,7 +1,7 @@
 var checkedout = false;
 function docheckout(){
     var ck = document.cookie;
-    var url= "https://script.google.com/macros/s/AKfycbw4CeteAymScHdgf0kaFc4zn2-qXSE2lmJSP6wTCy_-jKaHbFVNcdFkiNdHyooJxbIbgQ/exec?requesttype=checkout";
+    var url= "https://script.google.com/macros/s/AKfycbzzprtOE14qxnCU0VSGnO2qiPjPV4thiC2YP4GlOUPv0ERV6ZJwijbm6JRBwXGEdgQp4g/exec?requesttype=checkout";
     if(document.getElementById("name").value !=""){
         url+="&name="+document.getElementById("name").value;
     }else{
